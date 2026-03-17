@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vietnam Tour Packages | Student Project</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Glide.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">Trekking Vietnam</a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#why">Why Vietnam</a></li>
+          <li><a href="#chart">Stats</a></li>
+          <li><a href="#map">Map</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-utils">
+        <a href="#" class="nav-link">Login</a>
+        <a href="#" class="nav-link">Help</a>
+        <select class="nav-select" aria-label="Language">
+          <option>EN</option>
+          <option>VN</option>
+        </select>
+        <select class="nav-select" aria-label="Currency">
+          <option>USD</option>
+          <option>VND</option>
+        </select>
+      </div>
+      <button class="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#why">Why Vietnam</a></li>
+        <li><a href="#chart">Stats</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION (GLIDE CAROUSEL) -->
+ <section class="hero">
+  <div class="glide hero-glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide hero-bg" style="background-image:url('./images/vietnam1.jpg')">
+          <div class="hero-content">
+            <h1>Vietnam Tour Packages</h1>
+            <p class="hero-sub">Up to 40% off · Flights, hotels & activities included</p>
+          </div>
+        </li>
+        <li class="glide__slide hero-bg" style="background-image:url('./images/vietnam02.jpg')">
+          <div class="hero-content">
+            <h1>Explore Ha Long Bay</h1>
+            <p class="hero-sub">Cruise emerald waters and limestone islands</p>
+          </div>
+        </li>
+        <li class="glide__slide hero-bg" style="background-image:url('./images/vietnam04.jpg')">
+          <div class="hero-content">
+            <h1>Adventure in the Highlands</h1>
+            <p class="hero-sub">Trek Fansipan and meet local cultures</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="glide__bullets" data-glide-el="controls[nav]"></div>
+  </div>
+</section>
+
+  <!-- DESTINATION OVERVIEW -->
+  <section id="overview" class="section section-overview" data-aos="fade-up">
+    <div class="container">
+      <h2>Discover Vietnam</h2>
+      <p>
+        Vietnam is a land of breathtaking landscapes, vibrant cities, and rich traditions. From the emerald rice terraces of Sapa to the limestone karsts of Ha Long Bay, every journey is an adventure. Savor street food in Hanoi, cruise the Mekong Delta, and meet welcoming locals. Whether you seek culture, nature, or relaxation, Vietnam has it all.
+      </p>
+    </div>
+  </section>
+
+  <!-- TOUR PACKAGES GRID -->
+  <section id="tours" class="section section-tours" data-aos="fade-up">
+    <div class="container">
+      <h2>Featured Tour Packages</h2>
+      <div class="tour-grid">
+        <!-- Card 1 -->
+        <article class="tour-card" data-aos="fade-up">
+          <div class="tour-img-wrap">
+            <img src="./images/fansipan.jpg" alt="Fansipan Trek" class="tour-img" loading="lazy">
+            <span class="badge badge-discount">40% OFF</span>
+          </div>
+          <div class="tour-card-body">
+            <h3>Fansipan Summit Adventure</h3>
+            <p>Climb the “Roof of Indochina” and enjoy panoramic views from Vietnam’s highest peak.</p>
+            <div class="tour-price-block">
+              <span class="price-old">$999</span>
+              <span class="price-new">$599</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-block">View Trip</a>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="tour-card" data-aos="fade-up">
+          <div class="tour-img-wrap">
+            <img src="./images/cucphuong.jpg" alt="Cuc Phuong Trek" class="tour-img" loading="lazy">
+            <span class="badge badge-discount">30% OFF</span>
+          </div>
+          <div class="tour-card-body">
+            <h3>Cúc Phương Jungle Trek</h3>
+            <p>Explore Vietnam’s oldest national park, home to rare wildlife and ancient trees.</p>
+            <div class="tour-price-block">
+              <span class="price-old">$799</span>
+              <span class="price-new">$559</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-block">View Trip</a>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="tour-card" data-aos="fade-up">
+          <div class="tour-img-wrap">
+            <img src="./images/dong-van.webp" alt="Dong Van Trek" class="tour-img" loading="lazy">
+            <span class="badge badge-discount">25% OFF</span>
+          </div>
+          <div class="tour-card-body">
+            <h3>Đồng Văn Karst Plateau</h3>
+            <p>Marvel at dramatic cliffs and winding passes in this UNESCO Global Geopark.</p>
+            <div class="tour-price-block">
+              <span class="price-old">$899</span>
+              <span class="price-new">$674</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-block">View Trip</a>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="tour-card" data-aos="fade-up">
+          <div class="tour-img-wrap">
+            <img src="./images/ha-long.jpg" alt="Ha Long Bay Cruise" class="tour-img" loading="lazy">
+            <span class="badge badge-discount">35% OFF</span>
+          </div>
+          <div class="tour-card-body">
+            <h3>Ha Long Bay Cruise</h3>
+            <p>Set sail among limestone islands and emerald waters on a luxury cruise.</p>
+            <div class="tour-price-block">
+              <span class="price-old">$1099</span>
+              <span class="price-new">$714</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-block">View Trip</a>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="tour-card" data-aos="fade-up">
+          <div class="tour-img-wrap">
+            <img src="./images/me-kong.webp" alt="Mekong Delta" class="tour-img" loading="lazy">
+            <span class="badge badge-discount">20% OFF</span>
+          </div>
+          <div class="tour-card-body">
+            <h3>Mekong Delta Discovery</h3>
+            <p>Experience floating markets, lush canals, and vibrant local life in the south.</p>
+            <div class="tour-price-block">
+              <span class="price-old">$699</span>
+              <span class="price-new">$559</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-block">View Trip</a>
+          </div>
+        </article>
+        <!-- Card 6 -->
+        <article class="tour-card" data-aos="fade-up">
+          <div class="tour-img-wrap">
+            <img src="./images/hoi-an.jpg" alt="Hoi An Ancient Town" class="tour-img" loading="lazy">
+            <span class="badge badge-discount">15% OFF</span>
+          </div>
+          <div class="tour-card-body">
+            <h3>Hoi An Ancient Town</h3>
+            <p>Wander lantern-lit streets, taste local cuisine, and relax by the river.</p>
+            <div class="tour-price-block">
+              <span class="price-old">$599</span>
+              <span class="price-new">$509</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-block">View Trip</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY TRAVEL TO VIETNAM -->
+  <section id="why" class="section section-why" data-aos="fade-up">
+    <div class="container">
+      <h2>Why Travel to Vietnam?</h2>
+      <div class="why-features">
+        <div class="why-feature">
+          <svg width="36" height="36" fill="#0F6F5C"><circle cx="18" cy="18" r="16"/></svg>
+          <h3>Guided Tours</h3>
+          <p>Expert local guides ensure a safe and immersive experience.</p>
+        </div>
+        <div class="why-feature">
+          <svg width="36" height="36" fill="#0F6F5C"><rect x="6" y="12" width="24" height="12" rx="4"/></svg>
+          <h3>Handpicked Hotels</h3>
+          <p>Stay in comfortable, well-reviewed hotels throughout your journey.</p>
+        </div>
+        <div class="why-feature">
+          <svg width="36" height="36" fill="#0F6F5C"><polygon points="18,6 30,30 6,30"/></svg>
+          <h3>Domestic Flights Included</h3>
+          <p>All internal flights are arranged for your convenience.</p>
+        </div>
+        <div class="why-feature">
+          <svg width="36" height="36" fill="#0F6F5C"><rect x="10" y="10" width="16" height="16" rx="8"/></svg>
+          <h3>24/7 Support</h3>
+          <p>Our team is available around the clock to assist you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHART SECTION (Chart.js) -->
+  <section id="chart" class="section section-chart" data-aos="fade-up">
+    <div class="container">
+      <h2>Vietnam Travel Stats</h2>
+      <canvas id="travelChart"></canvas>
+    </div>
+  </section>
+
+  <!-- MAP SECTION (Leaflet.js) -->
+  <section id="map" class="section section-map" data-aos="fade-up">
+    <div class="container">
+      <h2>Where is Vietnam?</h2>
+      <div id="leaflet-map"></div>
+    </div>
+  </section>
+
+  <!-- FAQ / ACCORDION -->
+  <section id="faq" class="section section-faq" data-aos="fade-up">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">Do I need a visa to visit Vietnam?<span class="chevron"></span></button>
+          <div class="accordion-body">
+            <p>Most travelers need a visa, but many can apply online for an e-visa. Check the latest requirements for your country.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Are flights included in the package?<span class="chevron"></span></button>
+          <div class="accordion-body">
+            <p>International flights are not included, but all domestic flights within Vietnam are covered.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Is it safe to travel in Vietnam?<span class="chevron"></span></button>
+          <div class="accordion-body">
+            <p>Vietnam is generally very safe for travelers. Our guides and support team are always available to help.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">What should I pack?<span class="chevron"></span></button>
+          <div class="accordion-body">
+            <p>Comfortable clothes, sturdy shoes, sunscreen, and a sense of adventure!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: student@trekkingvietnam.com</li>
+          <li>Phone: +84 123 456 789</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <ul class="footer-social">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Trekking Vietnam. Student project. Not a real travel agency.</p>
+    </div>
+  </footer>
+
+  <!-- JS LIBRARIES -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- MAIN JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
